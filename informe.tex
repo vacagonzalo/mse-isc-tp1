@@ -123,16 +123,16 @@ En el cuadro \ref{tab:failure} se puede observar un resumen de los modos de fall
 \begin{table}[h]
 	\centering
 	\caption[Failure mode and effect analysis]{Failure mode and effect analysis}
-	\begin{tabular}{c c c c c c c}
+	\begin{tabular}{c c c c c c c c}
 		\toprule
-		\textbf{Código} & \textbf{Función} & \textbf{Modo} & \textbf{Causa} & \textbf{Efecto}  & \textbf{Criticidad} & \textbf{Comentarios} \\
+		\textbf{Código} & \textbf{Función} & \textbf{Modo} & \textbf{Causa} & \textbf{Efecto}  & \textbf{Criticidad} & \textbf{P} & \textbf{Comentarios} \\
 		\midrule
-		CW              & Enfriamiento     & Degradado     & Obstrucción    & Sobretemperatura & III                 &                      \\
-		C               & Enfriamiento     & Degradado     & Pérdida        & Sobretemperatura & II                  & Falla                \\
-		PS              & Alimentación     & C. abierto    & Fusible        & Sobretemperatura & II                  & Falla                \\
-		R               & Producción       & Degradado     & Pérdida        & Catastrófico     & I                   & Falla                \\
-		SW              & Control          & Apertura      & Tiristor       & Catastrófico     & I                   & Falla                \\
-		V               & Control          & Apertura      & Bobina         & Catastrófico     & I                   & Falla                \\
+		CW              & Enfriamiento     & Degradado     & Obstrucción    & Sobretemperatura & III                 & $10^{-2}$    &                      \\
+		C               & Enfriamiento     & Degradado     & Pérdida        & Sobretemperatura & II                  & $10^{-3}$          & Falla                \\
+		PS              & Alimentación     & C. abierto    & Fusible        & Sobretemperatura & II                  & $10^{-1}$          & Falla                \\
+		R               & Producción       & Degradado     & Pérdida        & Catastrófico     & I                   & $10^{-2}$          & Falla                \\
+		SW              & Control          & Apertura      & Tiristor       & Catastrófico     & I                   & $10^{-4}$          & Falla                \\
+		V               & Control          & Apertura      & Bobina         & Catastrófico     & I                   & $10^{-3}$          & Falla                \\
 		\bottomrule
 		\hline
 	\end{tabular}
